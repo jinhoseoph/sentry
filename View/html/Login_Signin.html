@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+<HTML>
+ <HEAD>
+  <TITLE> Login/Register </TITLE>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+<meta charset="utf-8">
+
+
+ 
+ </HEAD>
+
+ <BODY type ="login" >
+  
+  <?php include "./header.html" ?>
+  <div class="box_signin">
+  <p type = "p_welcome">Welcome to Sentry!</p>
+  <p type = "p_2">Track your home security real time</p>
+   <p type = "p_3">Already have an account?</p>
+  </div>
+
+<button type="sign_in" style ="color: #"class="sign_in"><b><a href="Login.html">SIGN IN</a></b></button>
+
+  </div>
+
+  
+
+
+  <form action="action_page.php">
+  <div class="container">
+    
+	<p type ="p_reg">Registration</p>
+<label type= "f_name"><b>Full Name</b></label>
+	<input type="f_name" placeholder="First Name" name="f_name" id="f_name" required>
+    <input type="l_name" placeholder="Last Name" name="l_name" id="l_name" required>
+
+
+    <label type="email"><b>Email</b></label>
+
+	 <input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+
+    <label type="password"><b>Password</b></label>
+
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+    <label type="psw-repeat"><b>Verify Password</b></label>
+
+    <input type="psw-repeat" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <button type="submit" style ="color: #"class="registerbtn">Submit</button>
+  </div>
+
+</form>
+<div class="topnav" id="myTopnav">
+ <img src="sentry.jpg" style="
+position: absolute;
+width: 150px;
+height: 124px;
+left: 30px;
+top: 3px;
+
+"></img>
+<a style="margin-right: 550px;"></a>
+  <a class="first" href="#services">Services</a>
+  <a class="first" href="#contact">Contact</a>
+  <a href="#login">Login/Register</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+ 
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ </BODY>
+</HTML>
